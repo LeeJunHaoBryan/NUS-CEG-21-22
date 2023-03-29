@@ -1,0 +1,66 @@
+# Metadata for Annual Motor Vehicle Population by Vehicle Type
+---
+Identifier: 'a2594d5d-6dad-41a3-922a-fb13147d59de'
+Name: 'annual-motor-vehicle-population-by-vehicle-type'
+Title: 'Annual Motor Vehicle Population by Vehicle Type'
+Description:
+  - 'Annual motor vehicle population by vehicle type'
+  - ''
+Topics:
+  - 'Transport'
+Keywords:
+  - 'Motor vehicles'
+Publisher:
+  Name: 'Land Transport Authority'
+  Admin 1:
+    Name: 'Land Transport Authority'
+    Department: 'Land Transport Authority'
+    Email: 'Datamall@LTA.gov.sg'
+Sources:
+  - 'Land Transport Authority'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '2005-01-01 to 2020-12-31'
+Last Updated: '2022-06-15T09:00:35.598841'
+Resources:
+  -
+    Identifier: 'dec53407-9f97-47b8-ba89-b2070569a09e'
+    Title: 'Annual Motor Vehicle Population by Vehicle Type'
+    Url: 'https://storage.data.gov.sg/annual-motor-vehicle-population-by-vehicle-type/resources/annual-motor-vehicle-population-by-vehicle-type-2022-06-15T09-00-10Z.csv'
+    Format: 'CSV'
+    Coverage: '2005-01-01 to 2020-12-31'
+    Description:
+      - '* Off peak cars include weekend cars and revised off peak cars which was
+        implemented on 25 Jan 2010.'
+      - '* LGV (max laden weight <= 3.5mt), HGV (max laden weight 3.5mt - 16mt), VHGV
+        (max laden weight > 16mt).'
+      - 'Tax exempted vehicles include vehicles registered with exemption of road
+        tax payment, vehicles for off-the-road use and engineering plants,'
+      - ''
+      - 'School Bus (CB): School Bus with "CB" suffix registration numbers.'
+      - ''
+      - 'MVP 01-01 Veh by type'
+    Last Updated: '2022-06-15T09:00:10.460560'
+    Schema:
+      -
+        Name: 'year'
+        Title: 'Year'
+        Type: 'datetime'
+        Sub Type: 'year'
+        Format: 'YYYY'
+      -
+        Name: 'category'
+        Title: 'Category'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'type'
+        Title: 'Type'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'number'
+        Title: 'No. of Vehicles'
+        Type: 'numeric'
+        Sub Type: 'general'
+        Unit Of Measure: 'No. of Vehicles'

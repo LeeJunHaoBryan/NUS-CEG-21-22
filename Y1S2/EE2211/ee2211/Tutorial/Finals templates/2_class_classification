@@ -1,0 +1,25 @@
+import numpy as np
+from numpy.linalg import inv
+from sklearn.preprocessing import PolynomialFeatures as skpf
+
+x_data = [[4], [7], [10], [2], [3], [9]]
+y_data = [[-1], [-1], [-1], [1], [1], [1]]
+
+x = np.array(x_data)
+y = np.array(y_data)
+
+bias = np.ones((len(x_data), 1))
+x = np.hstack((bias, x))
+
+w = np.linalg.lstsq(x, y, rcond = None)[0]
+print('\n w is: \n', w)
+
+xt = [[6]]
+x_test = np.array(xt)
+bias = np.ones((len(x_test), 1))
+X_test = np.hstack((bias, x_test))
+
+y_predict = X_test @ w
+print('\n y_predict is: \n', y_predict)
+y_class_predict = np.sign(y_predict)
+print('\ny_class_predict is:\n', y_class_predict)
